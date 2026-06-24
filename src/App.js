@@ -165,9 +165,9 @@ function Nav({ onNav }) {
   return (
     <>
       <nav className="nav" data-testid="main-nav">
-        <div className="nav-logo" data-testid="nav-logo" onClick={() => go("home")} style={{ cursor: "pointer" }}>
-          RODIC<span className="x">×</span>NASSCOM
-        </div>
+       <div className="nav-logo" data-testid="nav-logo" onClick={() => go("home")} style={{ cursor: "pointer" }}>
+  <a href="https://www.rodicconsultants.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }} onClick={(e) => e.stopPropagation()}>RODIC</a><span className="x">×</span>NASSCOM
+</div>
         <div className="nav-links">
           {navItems.map((n) => (
             <span
